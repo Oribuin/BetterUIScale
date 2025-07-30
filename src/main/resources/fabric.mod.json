@@ -8,7 +8,8 @@
   "authors": [
     "Rose",
     "Qendolin",
-    "Oribuin"
+    "Oribuin",
+    "Gahaha"
   ],
   "contact": {
     "homepage": "https://github.com/Oribuin/BetterUIScale",
@@ -29,8 +30,8 @@
   "accessWidener": "betteruiscale.accesswidener",
 
   "depends": {
-    "fabricloader": ">=0.11.11",
-    "minecraft": "~1.21.4",
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
     "java": ">=21",
     "fabric": "*"
   },

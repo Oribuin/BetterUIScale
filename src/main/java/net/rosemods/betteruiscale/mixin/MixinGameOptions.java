@@ -55,7 +55,7 @@ public class MixinGameOptions {
         if (value == 0) {
             return GameOptions.getGenericValueText(optionText, Text.translatable("options.guiScale.auto"));
         } else {
-            double scale = ScaleFactorUtil.fromInternalScaleFactor(value.doubleValue());
+            double scale = ScaleFactorUtil.fromInternalScaleFactor(value);
             return Text.translatable("options.percent_value", optionText, (int) (scale * 100f));
         }
     }

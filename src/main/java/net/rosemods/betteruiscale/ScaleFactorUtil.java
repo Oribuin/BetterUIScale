@@ -52,12 +52,12 @@ public class ScaleFactorUtil {
         return scale;
     }
 
-    public static int scaleInternal(int size, double internalScale) {
+    public static int scaleInternal(int size, int internalScale) {
         double scale = fromInternalScaleFactor(internalScale);
         return MathHelper.ceil(size / scale);
     }
 
-    public static double fromInternalScaleFactor(double scale) {
+    public static int fromInternalScaleFactor(int scale) {
         // certain scale factors produce rendering errors due to incorrect rounding
         // using a prime number (11) avoids that (I think)
         scale = (scale - 1) / 11 + 1;

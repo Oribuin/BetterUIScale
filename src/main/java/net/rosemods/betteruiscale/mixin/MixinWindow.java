@@ -41,7 +41,7 @@ public class MixinWindow {
      */
     @Overwrite
     public void setScaleFactor(int scaleFactor) {
-        this.scaleFactor = (int) ScaleFactorUtil.fromInternalScaleFactor(scaleFactor);
+        this.scaleFactor = ScaleFactorUtil.fromInternalScaleFactor(scaleFactor);
         scaledWidth = ScaleFactorUtil.scaleInternal(framebufferWidth, scaleFactor);
         scaledHeight = ScaleFactorUtil.scaleInternal(framebufferHeight, scaleFactor);
     }
